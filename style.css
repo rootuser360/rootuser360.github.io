@@ -4,12 +4,13 @@ h1{
 
 
 }
-
-
-body {
-  margin: 0;                     /* remove default spacing */
+body{
+  margin: 0; /* remove default spacing */
+  min-height: 100vh; /* ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  font-family: Papyrus, "Comic Sans MS", cursive, sans-serif;
 }
-
 
 .header-container {
   display: flex;              /* side-by-side layout */
@@ -39,18 +40,6 @@ body {
   font-size: 22px;
   margin-top: 10px;
   color: #555;
-}
-
-.bottom-border {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background-image: url('assets/images/border.jpg');
-  background-repeat: repeat-x;
-  background-size: auto;
-  z-index: 100; /* stay on top if needed */
 }
 
 
@@ -83,11 +72,57 @@ body {
   background: linear-gradient(135deg, #f7e4e4, #f5c6c6); /* invert gradient */
 }
 .info-paragraph{
-  font-family: Georgia, serif; /* modern font */
+  font-family: Papyrus, "Comic Sans MS", cursive;
   font-size: 20px;         /* adjust for compact text */
   line-height: 2;        /* tighter line spacing */
   text-align: center;       /* center text */
   max-width: 700px;         /* restrict width for easier reading */
-  margin: 70px auto 20px auto;        /* vertical spacing + center horizontally */
+  margin: 20px auto 20px auto;        /* vertical spacing + center horizontally */
   color: #000;              /* slightly darker text for readability */
 }
+.social-buttons {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  gap: 30px;                /* space between buttons */
+  margin: 30px 0;           /* space above & below */
+}
+
+.social-buttons a {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;       /* circle */
+  overflow: hidden;         /* clip image into circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.8); /* subtle background */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-buttons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+
+.social-buttons img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.social-title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.mission {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 70px;
+  font-weight: 600; 
+}
+
