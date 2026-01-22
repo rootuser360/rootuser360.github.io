@@ -1,7 +1,93 @@
 h1{
-
-	
+  font-size: 48px; 
+  text-align:center;
 
 
 }
 
+
+body {
+  margin: 0;                     /* remove default spacing */
+}
+
+
+.header-container {
+  display: flex;              /* side-by-side layout */
+  align-items: center;        /* vertically center image and text */
+  justify-content: center;    /* center the whole block horizontally */
+  gap: 20px;                  /* space between image and text */
+  margin-top: 50px;           /* optional spacing from top */
+}
+
+.header-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;         /* circle shape */
+  object-fit: cover;          /* fill the circle without stretching */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional shadow */
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin: 0;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.header-text p {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.bottom-border {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url('assets/images/border.jpg');
+  background-repeat: repeat-x;
+  background-size: auto;
+  z-index: 100; /* stay on top if needed */
+}
+
+
+/* Center the buttons container */
+.buttons {
+  display: flex;                  /* use flexbox */
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;                      /* space between buttons */
+  margin-top: 30px;               /* space from header/title */
+}
+
+/* Style links like buttons */
+.buttons a {
+  padding: 12px 25px;             /* more padding for modern look */
+  background: linear-gradient(135deg, #f5c6c6, #f7e4e4); /* gradient button */
+  color: #000;                     /* text color */
+  text-decoration: none;            /* remove underline */
+  border-radius: 12px;             /* rounded corners */
+  font-weight: 600;                /* slightly bold */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* subtle shadow */
+  transition: all 0.3s ease;      /* smooth hover effect */
+}
+
+/* Hover effect */
+.buttons a:hover {
+  transform: translateY(-3px);   /* subtle lift */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #f7e4e4, #f5c6c6); /* invert gradient */
+}
+.info-paragraph{
+  font-family: Georgia, serif; /* modern font */
+  font-size: 20px;         /* adjust for compact text */
+  line-height: 2;        /* tighter line spacing */
+  text-align: center;       /* center text */
+  max-width: 700px;         /* restrict width for easier reading */
+  margin: 70px auto 20px auto;        /* vertical spacing + center horizontally */
+  color: #000;              /* slightly darker text for readability */
+}
