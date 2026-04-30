@@ -2,7 +2,6 @@ h1{
   font-size: 48px; 
   text-align:center;
 
-
 }
 body{
   margin: 0; /* remove default spacing */
@@ -21,18 +20,15 @@ body{
 }
 
 .header-image {
-  width: 150px;
+  width: 100px;
   height: 150px;
-  border-radius: 50%;         /* circle shape */
-  object-fit: cover;          /* fill the circle without stretching */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* optional shadow */
 }
 
 .header-text h1 {
   font-size: 60px;
   margin: 0;
   font-weight: bold;
-  font-family: Arial, sans-serif;
+  font-family: Times New Roman;
   color: #222;
 }
 
@@ -40,27 +36,30 @@ body{
   font-size: 22px;
   margin-top: 10px;
   color: #555;
+  font-family: Times New Roman;
 }
 
 
 /* Center the buttons container */
 .buttons {
   display: flex;                  /* use flexbox */
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 50px;                      /* space between buttons */
-  margin-top: 30px;               /* space from header/title */
+  gap: 40px;                      /* space between buttons */
+  margin-top: 30px;    /* space from header/title */
+  flex-wrap: wrap;
 }
 
 /* Style links like buttons */
 .buttons a {
   padding: 12px 25px;             /* more padding for modern look */
-  background: linear-gradient(135deg, #f5c6c6, #f7e4e4); /* gradient button */
+  background: linear-gradient(135deg, #a88872, #debea9); /* gradient button */
   color: #000;                     /* text color */
   text-decoration: none;            /* remove underline */
   border-radius: 12px;             /* rounded corners */
   font-weight: 600;                /* slightly bold */
-  font-family: Arial, sans-serif;
+  font-family: Times New Roman;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* subtle shadow */
   transition: all 0.3s ease;      /* smooth hover effect */
 }
@@ -69,10 +68,10 @@ body{
 .buttons a:hover {
   transform: translateY(-3px);   /* subtle lift */
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  background: linear-gradient(135deg, #f7e4e4, #f5c6c6); /* invert gradient */
+  background: linear-gradient(135deg, #a88872, #debea9); /* invert gradient */
 }
 .info-paragraph{
-  font-family: Papyrus, "Comic Sans MS", cursive;
+  font-family: Helvetica;
   font-size: 20px;         /* adjust for compact text */
   line-height: 2;        /* tighter line spacing */
   text-align: center;       /* center text */
@@ -121,8 +120,31 @@ body{
 
 .mission {
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 70px;
-  font-weight: 600; 
+  font-weight: 600;
+  font-family: Times New Roman;
+}
+
+.images {
+  display: flex;        /* puts items in a row */
+  gap: 40px;            /* space between images */
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.images img {
+  width: 500px;         /* control size */
+  height: auto;
+}
+.spanish{
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 20px;         /* adjust for compact text */
+  line-height: 2;        /* tighter line spacing */
+  text-align: center;       /* center text */
+  max-width: 700px;         /* restrict width for easier reading */
+  margin: 20px auto 20px auto;        /* vertical spacing + center horizontally */
+  color: #1f02f5;              /* slightly darker text for readability */
 }
 
