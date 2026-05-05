@@ -70,8 +70,9 @@ body{
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   background: linear-gradient(135deg, #a88872, #debea9); /* invert gradient */
 }
+
 .info-paragraph{
-  font-family: Helvetica;
+  font-family: Times New Roman;
   font-size: 20px;         /* adjust for compact text */
   line-height: 2;        /* tighter line spacing */
   text-align: center;       /* center text */
@@ -138,7 +139,7 @@ body{
   height: auto;
 }
 .spanish{
-  font-family: Helvetica;
+  font-family: Times new roman;
   font-style: italic;
   font-size: 20px;         /* adjust for compact text */
   line-height: 2;        /* tighter line spacing */
@@ -148,3 +149,20 @@ body{
   color: #1f02f5;              /* slightly darker text for readability */
 }
 
+ul {
+  font-family: "Times New Roman";
+  font-size: 20px;
+  display: inline-block;  /* shrink to content width */
+  text-align: left;       /* keep bullets aligned */
+  padding-left: 350px;         /* center horizontally */
+}
+
+.volunteer{
+ display: flex;
+ justify-content: center;
+ padding-top: 30px;
+}
+.volunteer img{
+ width: 500px;
+ height: auto;
+}
